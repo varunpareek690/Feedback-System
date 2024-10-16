@@ -63,9 +63,9 @@ Follow these steps to set up the project locally:
 
 ## Running the Application
 
-1. **Navigate to the Feedback-system folder**:
+1. **Navigate to the front-end folder**:
     ```bash
-    cd Feedback-system
+    cd front-end
     ```
 
 2. **Start the React application**:
