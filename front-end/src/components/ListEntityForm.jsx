@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
-import { contractAddress, contractABI } from "../contractData";
+import { contractAddress, contractABI } from "../Blockchain/contractData";
 
 const ListEntityForm = () => {
     const [entityAddress, setEntityAddress] = useState("");

@@ -1,0 +1,49 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+}
+
+
+.auth-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.content_homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.graphic {
+    display: flex;
+    justify-content: center; 
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.graphic img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+}
+.tagline {
+    margin: 10px 0;
+    text-align: center;
+}

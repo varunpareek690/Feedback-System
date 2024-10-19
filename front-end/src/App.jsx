@@ -1,20 +1,17 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
-import FeedbackForm from './components/FeedbackForm';
-import ListEntityForm from './components/ListEntityForm';
-import { contractAddress, contractABI } from './contractData';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import SignUpPage from './components/SignUpPage';
+import Dashboard from './components/Dashboard';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-    <h1>Feedback DApp</h1>
-    <ListEntityForm /> {/* Render the ListEntityForm component */}
-    <FeedbackForm /> {/* Render the FeedbackForm component */}
+<Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path= "/dashboard" element ={<Dashboard/>} />
+      </Routes>
+    </Router>
 </div>
   )
 }

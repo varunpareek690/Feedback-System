@@ -2,7 +2,8 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.6",
     "dotenv": "^16.4.5",
-    "hardhat": "^2.22.13"
+    "hardhat": "^2.22.13",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0"

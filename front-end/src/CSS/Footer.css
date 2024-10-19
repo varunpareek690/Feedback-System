@@ -1,0 +1,7 @@
+/* src/CSS/Footer.css */
+.footer {
+    background-color: #001f3f; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,38 @@
+/* src/CSS/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f3f; /* Dark blue */
+}
+
+.logo {
+    color: white;
+}
+.auth-button {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: bold;
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.4); 
+    position: relative; 
+}
+
+.auth-button:hover {
+    background-color: #fff; /* Darker blue on hover */
+    color: #0056b3; /* Keep the text white */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5); /* Deeper shadow on hover */
+}
+
+.auth:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Return to original shadow */
+}

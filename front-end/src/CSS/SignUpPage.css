@@ -1,0 +1,83 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; 
+    background-color: #f0f8ff; 
+    color: #333; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.content_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.connect-button {
+    padding: 15px 30px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+    background-color: #0056b3; 
+}
+
+.wallet-support {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.nft-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.marketplace-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .connect-button {
+        width: 80%;
+    }
+}
+
+
+.signup-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('path-to-your-blockchain-animation.gif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1; 
+    z-index: -1; 
+}
