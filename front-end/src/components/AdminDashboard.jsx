@@ -66,7 +66,6 @@
 
 // src/components/AdminDashboard.js
 import React, { useState } from 'react';
-import axios from 'axios';
 import { ethers } from 'ethers';
 import { authContractABI, authContractAddress } from '../Blockchain/contractData';
 import Navbar from './Navbar';
