@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "feedback-system",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npx thirdweb@latest upload dist -k DpHfkSPe14DlmblEGm8arax3GfPjRUeLguEJwjjHUT2Hqgj9aQAX4Ru3IfTv-3YB4NA1DezcgF1AirJuCysKpA"
   },
   "dependencies": {
     "ethers": "^5.7.2",
