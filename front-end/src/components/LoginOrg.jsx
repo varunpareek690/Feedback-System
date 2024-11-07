@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const LoginOrg = () => {
-    require('dotenv').config();
+    const backend_url = 'http://localhost:5000'
     const [orgEmail, setOrgEmail] = useState('');
     const [walletAddress, setWalletAddress] = useState('');
     const [loading, setLoading] = useState(false);
@@ -24,7 +24,7 @@ const LoginOrg = () => {
         setLoading(true);
 
         try {
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/loginorg`, {
+            const response = await fetch(`${backend_url}/api/loginorg`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

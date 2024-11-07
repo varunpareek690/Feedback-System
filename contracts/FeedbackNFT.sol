@@ -11,7 +11,7 @@ contract FeedbackNFT is ERC721, Ownable, ReentrancyGuard {
     
     struct Feedback {
         address givenBy;
-        string feedbackText;
+        string ipfsHash;
         uint8 rating;
         uint256 timestamp;
     }
@@ -23,7 +23,7 @@ contract FeedbackNFT is ERC721, Ownable, ReentrancyGuard {
         uint256 lastUpdateBlock;
     }
 
-    // State variables
+
     Counters.Counter private _tokenIdCounter;
     uint256 public constant MAX_RATING = 10;
     uint256 public constant MIN_RATING = 1;
@@ -45,7 +45,7 @@ contract FeedbackNFT is ERC721, Ownable, ReentrancyGuard {
     event FeedbackGiven(
         address indexed to, 
         address indexed from, 
-        string feedbackText, 
+        string ipfsHash, 
         uint8 rating,
         uint256 timestamp
     );

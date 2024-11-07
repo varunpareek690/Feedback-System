@@ -126,6 +126,12 @@ const SignUpOrg = () => {
                             {loading ? 'Registering...' : 'Register Organization'}
                         </button>
                     </form>
+                    <button
+                        className="signup-redirect-button"
+                        onClick={() => navigate('/loginorg')}
+                    >
+                        Already Registered? Login Here
+                    </button>
                 </div>
             </div>
             <Footer />

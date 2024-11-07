@@ -12,6 +12,7 @@
     "deploy": "npm run build && npx thirdweb@latest upload dist -k DpHfkSPe14DlmblEGm8arax3GfPjRUeLguEJwjjHUT2Hqgj9aQAX4Ru3IfTv-3YB4NA1DezcgF1AirJuCysKpA"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ethers": "^5.7.2",
     "feedback-system": "file:",
     "react": "^18.3.1",

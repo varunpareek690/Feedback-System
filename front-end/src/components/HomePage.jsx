@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 const HomePage = () => {
     const navigate = useNavigate();
     const handleSignUpClick = () => {
-        navigate('/signup');
+        navigate('/signuporg');
       };
     const handleLoginClick = () => {
         navigate('/login');
@@ -15,9 +15,10 @@ const HomePage = () => {
     return (
         <div className="home-container">
             <Navbar 
+                showSignupButton={true}
                 showAuthButtons={true}
                 onSignUpClick={handleSignUpClick}
-                onLoginClick={handleLoginClick}
+                onClick={handleLoginClick}
             />
             <div className="content_homepage">
                 <div className='graphic'>
