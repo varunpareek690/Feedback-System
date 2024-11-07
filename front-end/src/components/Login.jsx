@@ -6,7 +6,7 @@ import '../CSS/SignUpPage.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-const SignUpPage = () => {
+const LoginPage = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [connectedAccount, setConnectedAccount] = useState(null); // State for connected account
@@ -36,7 +36,7 @@ const SignUpPage = () => {
             const hasAccess = await contract.hasAccess(address);
             if (hasAccess) {
                 alert('Access granted! Redirecting to dashboard...');
-                navigate('/dashboard'); // Redirect to dashboard on successful access
+                navigate('/user/dashboard'); // Redirect to dashboard on successful access
             } else {
                 alert('Access denied! You do not have the required tokens.');
             }
@@ -106,4 +106,4 @@ const SignUpPage = () => {
     );
 };
 
-export default SignUpPage;
+export default LoginPage;
